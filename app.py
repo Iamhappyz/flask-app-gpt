@@ -43,7 +43,8 @@ def analyze_sentiment():
         # print(sentiment_response)
 
         # Assuming that sentiment_response contains the sentiment in neg, neu, or pos format
-        
+
+        return jsonify({"sentiment": sentiment})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
